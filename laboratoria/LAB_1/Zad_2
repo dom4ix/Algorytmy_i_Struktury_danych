@@ -1,0 +1,30 @@
+/*
+Dominik Jakubovskis. Student
+* -----------------
+ Laboratorium 1. Obliczyc funkcja y = ax^2 znaczenia, gdy a - stale. x - zmieniase z x0 do xn, krokiem hx
+* -----------------
+2022-10-11
+*/
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+
+  float a,x;
+  float x0,xn,hx=0;
+  float n;
+  
+  printf("\nWprowadz a,x0,xn\n");
+  scanf("%f %f %f",&a,&x0,&xn);
+  while(hx<=0){
+    printf("\nWprowadz dodatnia liczba hx\n");
+    scanf("%.2f", &hx);
+  }
+  
+  while(x<=xn){
+    printf("\n%.1f = %.1f * %.1f ^ %.1f\n",(a+x*x),a,x);
+    x=x+hx;
+
+  } 
+  //return 0;
+}
