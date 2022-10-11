@@ -10,21 +10,26 @@ Dominik Jakubovskis. Student
 
 int main(void) {
 
-  float a,x;
-  float x0,xn,hx=0;
-  float n;
+  double n,a,x;
+  double xn,hx=0;
   
   printf("\nWprowadz a,x0,xn\n");
-  scanf("%f %f %f",&a,&x0,&xn);
+  scanf("%lf %lf %lf",&a,&x,&xn);
+
+  if(a<=0)return 0;
+  if(x>xn)return 0;
+  
   while(hx<=0){
     printf("\nWprowadz dodatnia liczba hx\n");
-    scanf("%.2f", &hx);
+    scanf("%lf", &hx);
   }
   
+  printf("\n\n  y = ax^2 ");
+  
   while(x<=xn){
-    printf("\n%.1f = %.1f * %.1f ^ %.1f\n",(a+x*x),a,x);
+    printf("\n%.1lf = %.1lf * %.1lf ^ 2\n",(a*x*x),a,x);
     x=x+hx;
-
   } 
-  //return 0;
+  
+return 0;
 }
