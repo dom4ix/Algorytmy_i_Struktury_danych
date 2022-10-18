@@ -13,25 +13,22 @@ int main(void){
 	
     int n;
 
-    printf("Prosze, podac dlugosc tablicy:");
+	while(n>0){
+    printf("Prosze podac dlugosc tablicy:");
     scanf("%d", &n);
+	}
   
     double a, x[n], y[n];
   
-    printf("podajc a:");
+    printf("podaj a nie rowny 0: ");
     scanf("%lf", &a);
 
-    if(a<=0)return 0;
-    
     for(int i=0; i < n; i++)
     {
-        printf("Podaj x%d:", i+1);
-        scanf("%lf", &x[i]);
-    }
-    for(int i=0; i < n; i++)
-    {
-        y[i] = (a*x[i]*x[i]);
-        printf(" y = %.lf , a = %.lf , x = %.lf \n", y[i], a, x[i]);
+        printf("Podaj x%d: ", i+1);
+        scanf("%lf", &x[i]);        
+	      y[i] = (a*x[i]*x[i]);
+        printf(" y = %.lf , a = %.lf , x = %.lf \n", x[i], a, x[i]);
     }
 return 0;
 }
