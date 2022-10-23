@@ -28,7 +28,7 @@ int main(void){
         printf("Podaj x%d: ", i+1);
         scanf("%lf", &x[i]);        
 	      y[i] = (a*x[i]*x[i]);
-        printf(" y = %.lf , a = %.lf , x = %.lf \n", x[i], a, x[i]);
+        printf(" y = %.lf , a = %.lf , x = %.lf \n", y[i], a, x[i]);
     }
 return 0;
 }
