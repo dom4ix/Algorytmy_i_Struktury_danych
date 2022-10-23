@@ -21,7 +21,7 @@ int main(void){
 	double a, x[n], y[n];
   
 	do {
-    		printf("Podaj nie rowny 0::");
+    		printf("Podaj nie rowny 0:");
     		scanf("%lf", &a);
     	} while(a==0);
 
