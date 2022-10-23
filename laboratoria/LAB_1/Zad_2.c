@@ -15,9 +15,6 @@ int main(void) {
   
   printf("\nWprowadz a,x0,xn\n");
   scanf("%lf %lf %lf",&a,&x,&xn);
-
-  if(a<=0)return 0;
-  if(x>xn)return 0;
   
   while(hx<=0){
     printf("\nWprowadz dodatnia liczba hx\n");
