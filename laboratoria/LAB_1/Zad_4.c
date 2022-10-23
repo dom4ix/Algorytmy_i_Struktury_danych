@@ -11,24 +11,24 @@ Dominik Jakubovskis, Student
 
 int main(void){
 	
-    int n;
+	int n;
 
 	while(n>0){
-    printf("Prosze podac dlugosc tablicy:");
-    scanf("%d", &n);
+		printf("Prosze podac dlugosc tablicy:");
+		scanf("%d", &n);
 	}
+	
+	double a, x[n], y[n];
   
-    double a, x[n], y[n];
-  
-    printf("podaj a nie rowny 0: ");
-    scanf("%lf", &a);
+    	printf("podaj a nie rowny 0: ");
+    	scanf("%lf", &a);
 
-    for(int i=0; i < n; i++)
-    {
-        printf("Podaj x%d: ", i+1);
-        scanf("%lf", &x[i]);        
+    	for(int i=0; i < n; i++)
+    	{
+        	printf("Podaj x%d: ", i+1);
+        	scanf("%lf", &x[i]);        
 	      y[i] = (a*x[i]*x[i]);
-        printf(" y = %.lf , a = %.lf , x = %.lf \n", y[i], a, x[i]);
-    }
+        	printf(" y = %.lf , a = %.lf , x = %.lf \n", y[i], a, x[i]);
+    	}
 return 0;
 }
