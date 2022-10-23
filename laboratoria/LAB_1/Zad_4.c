@@ -13,15 +13,17 @@ int main(void){
 	
 	int n;
 
-	while(n>0){
-		printf("Prosze podac dlugosc tablicy:");
-		scanf("%d", &n);
-	}
+  	do {  
+    		printf("Podaj dlugosc tablicy:");
+    		scanf("%d",&n);
+   	 }  while(n<=0);
 	
 	double a, x[n], y[n];
   
-    	printf("podaj a nie rowny 0: ");
-    	scanf("%lf", &a);
+	do {
+    		printf("Podaj nie rowny 0::");
+    		scanf("%lf", &a);
+    	} while(a==0);
 
     	for(int i=0; i < n; i++)
     	{
