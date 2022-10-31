@@ -29,15 +29,8 @@ int main() {
   for (int i = 0; i < arr_size; i++) {
     arr[i] = rand()%200;
   }
-    printTable(arr);
-    printf("\n");
-    printf("max %d\n", findMax(arr));
-    printf("min %d\n", findMin(arr));
-    printf("size %d \n",size());
-    find(2, arr);
-    remove_it(1, arr);
-    printTable(arr);
-
+  
+  return 0;
 }
 
 int size() {
