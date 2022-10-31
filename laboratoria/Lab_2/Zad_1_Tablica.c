@@ -1,41 +1,20 @@
-// Dominik Jakubovskis, Student
+// Dominik Jakubovskis. Student
 // Tablica
 // 2022-10-25
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+
+#define arr_size 100
 
 int find(int item, int *arr);
 
 void insert(int item, int pos, int *arr);
 
+void remove_it(int pos, int *arr);
 
-void remove1(int pos, int *arr)
-{
-  int i;
-  int size = sizeof(arr)/sizeof(arr[0]);
-  
-    if(pos < 0 || pos > size)
-    {
-        printf("Invalid position! Please enter position from 1 to %d", size);
-    }
-    else
-    {
-        for(i=pos-1; i<size-1; i++)
-        {
-            arr[i] = arr[i + 1];
-        }
-        size--;
-        printf("\nElements of array after delete are : ");
-        for(i=0; i<size; i++)
-        {
-            printf("%d\t", arr[i]);
-        }
-    }
-}
-
-
-int size(int *arr);
+int size();
 
 int findMax(int *arr);
 
@@ -43,68 +22,81 @@ int findMin(int *arr);
 
 void printTable(int *arr);
 
-void main(void) {
-  int arr[100] = {4.4,5.4,9.9,8.8};
-  // realizacja
+int main() {
+  int arr[arr_size];
 
-  int position = find(5.4, arr);
-  printf("Pozycja: %d\n", pozycja);
-  int max = findMax(arr);
-  printf("Maksimum: %d\n", max);
-  int min = findMin(arr);
-  printf("Minimum: %d\n", min);
-  printTable(arr);
-  int okey = 2;
-  remove1(okey, arr);
-  
-  return;
+  srand(time(NULL)); 
+  for (int i = 0; i < arr_size; i++) {
+    arr[i] = rand()%200;
+  }
+    printTable(arr);
+    printf("\n");
+    printf("max %d\n", findMax(arr));
+    printf("min %d\n", findMin(arr));
+    printf("size %d \n",size());
+    find(2, arr);
+    remove_it(1, arr);
+    printTable(arr);
+
 }
 
-// Funkcii
+int size() {
+    return arr_size;
+ }
 
-int find(int item, int *arr){
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(item == arr[i]){
-      return i;
+int find(int item, int *arr) {
+    for (int i = 0; i < arr_size; i++) {
+      if (item == arr[i]) {
+        printf("jest element\n");
+        return 1;
+      
     }
   }
-  return -1;
+  printf("niema elementu\n");
+  return 0;
 }
 
-void insert(int item, int pos, int *arr){
-  arr[pos] = item;
+void insert(int item, int pos, int *arr) { 
+      arr[pos] = item;
+  }
+
+void remove_it(int pos, int *arr) {
+  int t_arr[size()-1];
+  for (int i = 1; i < size(); i++) {
+    if (i != pos) {
+    } else {
+      i++;
+      t_arr[i--] = arr[i];
+    }
+  }
+  *arr = *t_arr;
 }
 
-//void remove(float pos, float *arr);
-
-int size(int *arr){
-  int i = (sizeof(arr)/sizeof(arr[0]));
-  printf("\n%d",i);
-  return i;
-}
-
-int findMax(int *arr){
+int findMax(int *arr) {
   int max = arr[0];
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(max < arr[i]){
+  for (int i=0; i< arr_size; i++) {
+    if (max < arr[i]) {
       max = arr[i];
     }
   }
   return max;
 }
 
-int findMin(int *arr){
+int findMin(int *arr) {
   int min = arr[0];
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(min > arr[i]){
+  for (int i=0; i<arr_size; i++) {
+    if (min > arr[i]) {
       min = arr[i];
     }
   }
   return min;
 }
 
-void printTable(int *arr){
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    printf(" %.d ", arr[i]);
+void printTable(int *arr) {
+  printf("\nDrukuje tablice \n \n");
+  printf("-----------------\n");
+  for (int i = 0; i < arr_size; i++) {
+    printf("element nr.%d: %d \n", i+1, arr[i]);
   }
+  printf("-----------------\n");
 }
