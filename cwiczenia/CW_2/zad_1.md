@@ -1,4 +1,3 @@
-@@ -1,25 +1,34 @@
 Zadanie 1
 # Zadanie 1
 ## pseudocod Factorial
