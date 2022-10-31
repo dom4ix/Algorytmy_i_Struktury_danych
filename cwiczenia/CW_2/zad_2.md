@@ -18,6 +18,6 @@ int iloczyn_i_reszta(liczba)
 
 # Udowodnienie
 
-<img width="728" alt="image" src="./Screenshot (97).png">
+<img width="728" alt="image" src="https://raw.githubusercontent.com/Half-Time-Demon/Algorytmy_i_struktury_danych/main/zadania/Screenshot%20(97).png">
 ```
 ```
