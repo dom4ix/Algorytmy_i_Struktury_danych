@@ -1,3 +1,7 @@
+// Dominik Jakubovskis
+// Kolejka
+// 2022-10-24
+
 #include <stdio.h>
 #include <stdlib.h>
 
