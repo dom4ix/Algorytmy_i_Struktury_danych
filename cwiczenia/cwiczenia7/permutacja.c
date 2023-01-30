@@ -1,5 +1,5 @@
 //Wykonał: Dominik Jakubovskis, Student
-//Data: 2023-01-28
+//Data: 2023-01-30
 #include <stdio.h>
 #include <string.h>
 //funkcja swap
