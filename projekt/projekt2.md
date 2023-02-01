@@ -1,4 +1,10 @@
-### Algorytm obliczania dużych liczb Fibonacciego
+## Praca wykonal [Dominik Jakubovskis]
+
+## Projekt do przedmiotu "Algorytmy i struktury danych"
+
+## Data 2023-02-01
+
+# Algorytm obliczania dużych liczb Fibonacciego
 
 Duże liczby ciągu Fibonacciego
 Ciąg liczb Fibonacciego jest ciągiem rekurencyjnym, który definiujemy następująco:
@@ -20,7 +26,7 @@ f 0, f 1	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, f 0, 
 i	 –	zlicza obiegi pętli, i  ∈ N
 dodaj ( x, y )	 – 	dodaje dwie duże liczby jako łańcuchy i zwraca wynik jako łańcuch
 
-# Lista kroków:
+### Lista kroków:
 K01:	Jeśli n  = 0,
 to f  ← "0" i zakończ	dwie pierwsze wartości zwracamy bezpośrednio
 K02:	Jeśli n  = 1,
@@ -34,7 +40,7 @@ K07:	    f 0 ← f 1	przygotowujemy dwie poprzednie liczby
 K08:	    f 1 ← f	dla następnego obiegu
 K09:	Zakończ	 
 
-# Pseudokod
+### Pseudokod
 ```
 largeFib() {
 print bk1, bk2;
@@ -63,7 +69,7 @@ print bk1, bk2;
 ```
 
 
-# Program
+### Program
 ```
 #include <stdio.h>
 #define LARGEST 10000000000
