@@ -1,4 +1,10 @@
-### Algorytm przechodzenia przez listę cykliczną listę jednokierunkową
+## Praca wykonal [Dominik Jakubovskis]
+
+## Projekt do przedmiotu "Algorytmy i struktury danych"
+
+## Data 2023-02-01
+
+# Algorytm przechodzenia przez listę cykliczną listę jednokierunkową
 
 Lista cykliczna (ang. Circular Linked List) jest listą w której nie jest wyróżniony element początkowy, ani końcowy. Każdy element ma swojego następcę i poprzednika. Listy takie można konstruować jako jedno lub dwukierunkowe. Liniowa lista jednokierunkowa może zostać przekształcona w listę cykliczną poprzez zapisanie w polu wskaźnikowym jej ostatniego elementu adresu elementu pierwszego. Podobne operacje pozwalają zamienić dwukierunkową listę liniową w listę cykliczną.
 
@@ -15,7 +21,7 @@ Przejście przez wszystkie elementy listy od pierwszego do ostatniego
 Dane pomocnicze:
 p	 – 	wskazanie elementu listy
 
-# Lista kroków
+### Lista kroków
 K01:	p ← head	
 K02:	Jeśli p  = nil,
 to zakończ
@@ -28,7 +34,7 @@ K06:	Zakończ
 Poniższy obraz przedstawia cykliczną pojedynczo połączoną listę.
 ![image](https://user-images.githubusercontent.com/47005404/216130437-67557c0b-d47d-482a-8c7a-2102f2c8c2be.png)
 
-# Pseudokod
+### Pseudokod
 ```
 clearVisits(structure head)
 set structure temp pointer to head pointer
@@ -166,7 +172,7 @@ declare struct temp pointer
 ```
 
 
-# Program
+### Program
 
 // C code to perform circular linked list operations
 ```
@@ -475,7 +481,7 @@ Przypisanie NULL nie jest wymagane, ponieważ węzeł zawsze wskazuje inny węze
 Punkt początkowy można ustawić na dowolny węzeł.
 Przejście od pierwszego węzła do ostatniego węzła jest szybkie.
 
-## Złóżoność czasowa
+### Złóżoność czasowa
 Złożoność operacji wstawiania
 Operacje wstawiania, które nie wymagają przejścia, mają złożoność czasową O(1). A wstawienie wymagające przejścia ma złożoność czasową O(n).
 Złożoność przestrzeni wynosi O(1).
