@@ -105,3 +105,9 @@ K03:	Zakończ
 ### Złożość czasowa
 
 Czas wykonania tego algorytmu nie zależy od wartości n, czyli jest stały. Taki wynik jest o niebo lepszy od poprzedniego. Wniosek: często opłaca się rozważyć dany problem matematycznie.
+
+### Literatura
+Algorytmy i struktury danych, Krzysztof Diks, Wojciech Rytter
+
+### Zrodla
+https://eduinf.waw.pl/
