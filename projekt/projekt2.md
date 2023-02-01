@@ -25,6 +25,8 @@ Zmienne pomocnicze:
 f 0, f 1	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, f 0, f 1  ∈ N
 i	 –	zlicza obiegi pętli, i  ∈ N
 dodaj ( x, y )	 – 	dodaje dwie duże liczby jako łańcuchy i zwraca wynik jako łańcuch
+![image](https://user-images.githubusercontent.com/47005404/216173018-b26d6b4f-57ab-4cff-941b-a87e8aac1b73.png)
+
 
 ### Lista kroków:
 K01:	Jeśli n  = 0,
