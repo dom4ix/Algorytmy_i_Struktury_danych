@@ -4,7 +4,7 @@
 
 ## Data 2023-01-30
 
-### Algorytm wyznaczania n kolejnych wyrazów ciągu arytmetycznego
+# Algorytm wyznaczania n kolejnych wyrazów ciągu arytmetycznego
 
 Wstęp:
 Ciąg arytmetyczny to ciąg liczb, w którym różnica między dowolnymi dwoma kolejnymi wartościami jest taka sama.
@@ -24,7 +24,7 @@ an = a1 + (n-1) *
 
 Zatem formuła będzie miała postać an = a + (n-1) * d.
 
-# Przykład
+### Przykład
 Wejście: a=2, d=1, n=5
 Wyjście: 6
 Wyjaśnienie: Seria będzie:
@@ -66,7 +66,7 @@ Przykładem nieskończonego ciąg arytmetycznego jest:
 
 1,2,3,4,5,6,7,8,9,...
 
-## Pseudokod
+### Pseudokod
 
 Start
    Step 1 -> In function int nth_ap(int a, int d, int n)
@@ -76,7 +76,7 @@ Start
       Print The result obtained from calling the function nth_ap(a,d,n)
 Stop
 
-## Program
+### Program
 W C
 ```
 #include <stdio.h>
@@ -95,13 +95,13 @@ int main() {
 }
 
 
-# Lista kroków:
+### Lista kroków:
 
 K01:	Dla i  = 1, 2, ..., n :
 wykonuj krok K02 
 K02:	    Pisz a  = ( i  - 1 ) × d
 K03:	Zakończ
 
-# Złożość czasowa
+### Złożość czasowa
 
 Czas wykonania tego algorytmu nie zależy od wartości n, czyli jest stały. Taki wynik jest o niebo lepszy od poprzedniego. Wniosek: często opłaca się rozważyć dany problem matematycznie.
