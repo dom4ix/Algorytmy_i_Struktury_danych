@@ -79,3 +79,8 @@ print bk1, bk2;
 [kliknij](https://github.com/dom4ix/Algorytmy_i_Struktury_danych/blob/main/projekt/projekt2.c)
 
 Korzystanie z pętli For − Używając pętli For do generowania szeregu Fibonacciego, złożoność czasową można zredukować do O(n), co czyni to podejście skutecznym.
+
+### Przykład użycia
+Ciąg Fibonacciego można zastosować w finansach za pomocą czterech technik, w tym zniesień, łuków, wachlarzy i stref czasowych.
+
+Zniesienia Fibonacciego wymagają dwóch punktów cenowych wybranych na wykresie, zwykle swing high i swing low. Po wybraniu dwóch punktów liczby i linie Fibonacciego są rysowane w procentach tego ruchu. Jeśli cena akcji wzrośnie z 15 USD do 20 USD, wówczas poziom 23,6% wynosi 18,82 USD lub 20 USD - (5 USD x 0,236) = 18,82 USD. Poziom 50% wynosi 17,50 USD, czyli 15 USD - (5 USD x 0,5) = 17,50 USD.
