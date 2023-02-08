@@ -16,13 +16,13 @@ Tak jak mamy pierwszy wyraz, tj. a = 5, różnica 1 i n-ty wyraz, który chcemy 
 
 Możemy więc powiedzieć, że postęp arytmetyczny dla n-tego wyrazu będzie jak −
 
-a1 = a1
-a2 = a1 + (2-1) * re
-a3 = a1 + (3-1) * re
+$a_{1} = a_{1}$
+$a_{2} = a_{1} + (2-1) * d$
+$a_{3} = a_{1} + (3-1) * d$
 ..
-an = a1 + (n-1) *
+$a_{n} = a_{1} + (n-1) * d$
 
-Zatem formuła będzie miała postać an = a + (n-1) * d.
+Zatem formuła będzie miała postać $a_{n} = a_{1} + (n-1) * d$
 
 ### Przykład
 Wejście: a=2, d=1, n=5
@@ -38,7 +38,7 @@ Następnie oblicz n-ty wyraz przez (A + (N - 1) * D)
 Zwróć dane wyjściowe uzyskane z powyższego obliczenia.
 Formuła:
 
-Wzór na znalezienie n-tego wyrazu ciągu arytmetycznego to:   an=a+(n−1)∗d
+Wzór na znalezienie n-tego wyrazu ciągu arytmetycznego to:   $a_{n}=a_{1}+(n−1)∗d$
 
 a = pierwszy termin
 d = różnica
@@ -77,23 +77,7 @@ Start
 Stop
 
 ### Program
-W C
-```
-#include <stdio.h>
-
-int nth_ap(int a, int d, int n) {
-   t(n) = a(1) + (n-1)*d
-   return (a + (n - 1) * d);
-}
-
-int main() {
-   int a = 2;
-   int d = 1;
-   int n = 5;
-   printf(" %d-ty wyraz ciągu arytmetycznego : %d", n, nth_ap(a,d,n)); //5-tego jest równy 6
-   return 0;
-}
-
+[kliknij](https://github.com/dom4ix/Algorytmy_i_Struktury_danych/blob/main/projekt/projekt1.c)
 
 ### Lista kroków:
 
