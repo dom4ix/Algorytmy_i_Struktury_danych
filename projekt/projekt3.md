@@ -186,3 +186,6 @@ Złożoność przestrzeni wynosi O(1).
 
 Złożoność operacji usuwania
 Wszystkie operacje usuwania przebiegają ze złożonością czasową O(1). A złożoność przestrzeni wynosi O(1).
+
+### Zródła
+https://www.programiz.com/
