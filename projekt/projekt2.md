@@ -8,8 +8,8 @@
 
 Duże liczby ciągu Fibonacciego
 Ciąg liczb Fibonacciego jest ciągiem rekurencyjnym, który definiujemy następująco:
-
-fib0  = 0
+$f(n)=an^{2}+bn+c$ 
+fib_{0}  = 0
 fib1  = 1
 fibn  = fibn-2 + fibn-1, dla n  > 1
 
@@ -22,7 +22,7 @@ Liczby Fibonacciego znajdują bardzo wiele zastosowań w informatyce i matematyc
 fib49  = 7,778,742,049
 
 Zmienne pomocnicze:
-f 0, f 1	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, f 0, f 1  ∈ N
+f_{0}, f_{1}	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, f_{0}, f_{1}  ∈ N
 i	 –	zlicza obiegi pętli, i  ∈ N
 dodaj ( x, y )	 – 	dodaje dwie duże liczby jako łańcuchy i zwraca wynik jako łańcuch
 ![image](https://user-images.githubusercontent.com/47005404/216173018-b26d6b4f-57ab-4cff-941b-a87e8aac1b73.png)
