@@ -178,6 +178,6 @@ int main() {
   traverse(last);
 
   return 0;
-}w
+}
 
 ```
