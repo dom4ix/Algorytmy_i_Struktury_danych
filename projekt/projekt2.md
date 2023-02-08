@@ -8,10 +8,10 @@
 
 Duże liczby ciągu Fibonacciego
 Ciąg liczb Fibonacciego jest ciągiem rekurencyjnym, który definiujemy następująco:
-$f(n)=an^{2}+bn+c$ 
-$fib_{0}  = 0
+
+$fib_{0}  = 0$
 fib1  = 1
-fibn  = fib_{n-2} + fibn-1, dla n  > 1$
+fibn  = fib_{n-2} + fibn-1, dla n  > 1
 
 Kolejna liczba Fibonacciego (za wyjątkiem pierwszych dwóch) powstaje jako suma dwóch liczb poprzednich. Oto kilka początkowych liczb Fibonacciego:
 
