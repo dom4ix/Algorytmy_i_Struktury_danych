@@ -10,8 +10,8 @@ Duże liczby ciągu Fibonacciego
 Ciąg liczb Fibonacciego jest ciągiem rekurencyjnym, który definiujemy następująco:
 
 $fib_{0}  = 0$
-fib1  = 1
-fibn  = fib_{n-2} + fibn-1, dla n  > 1
+$fib_{1}  = 1$
+$fib_{n} = fib_{n-2} + fib_{n-1}, dla n  > 1$
 
 Kolejna liczba Fibonacciego (za wyjątkiem pierwszych dwóch) powstaje jako suma dwóch liczb poprzednich. Oto kilka początkowych liczb Fibonacciego:
 
@@ -19,10 +19,10 @@ Kolejna liczba Fibonacciego (za wyjątkiem pierwszych dwóch) powstaje jako suma
 
 Liczby Fibonacciego znajdują bardzo wiele zastosowań w informatyce i matematyce - na pewno spotkasz się z nimi jeszcze wielokrotnie. Ich wzrost jest bardzo szybki. Na przykład:
 
-fib49  = 7,778,742,049
+$fib_{49}$  = 7,778,742,049
 
 Zmienne pomocnicze:
-f_{0}, f_{1}	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, f_{0}, f_{1}  ∈ N
+f_{0}, f_{1}	 –	dwie poprzednie liczby Fibonacciego jako łańcuchy znakowe, $f_{0}, f_{1}$  ∈ N
 i	 –	zlicza obiegi pętli, i  ∈ N
 dodaj ( x, y )	 – 	dodaje dwie duże liczby jako łańcuchy i zwraca wynik jako łańcuch
 ![image](https://user-images.githubusercontent.com/47005404/216173018-b26d6b4f-57ab-4cff-941b-a87e8aac1b73.png)
@@ -72,44 +72,6 @@ print bk1, bk2;
 
 
 ### Program
-```
-#include <stdio.h>
-#define LARGEST 10000000000
-/**
- * Description: Find and print the first 98 fib numbers starting with 1 and 2.
- * Numbers should be coma and space separated.
- * Return: 0
- */
-int main(void)
-{
-	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
-	unsigned long int hold1, hold2, hold3;
-	int count;
-
-	printf("%lu, %lu, ", bk1, bk2);
-	for (count = 2; count < 98; count++)
-	{
-		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
-		{
-			hold1 = (bk1 + bk2) / LARGEST;
-			hold2 = (bk1 + bk2) % LARGEST;
-			hold3 = fr1 + fr2 + hold1;
-			fr1 = fr2, fr2 = hold3;
-			bk1 = bk2, bk2 = hold2;
-			printf("%lu%010lu", fr2, bk2);
-		}
-		else
-		{
-			hold2 = bk1 + bk2;
-			bk1 = bk2, bk2 = hold2;
-			printf("%lu", bk2);
-		}
-		if (count != 97)
-			printf(", ");
-	}
-	printf("\n");
-	return (0);
-}
-```
+[kliknij](https://github.com/dom4ix/Algorytmy_i_Struktury_danych/blob/main/projekt/projekt2.c)
 
 Korzystanie z pętli For − Używając pętli For do generowania szeregu Fibonacciego, złożoność czasową można zredukować do O(n), co czyni to podejście skutecznym.
